@@ -4,7 +4,7 @@ const apiSlice = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({
         baseUrl:
-            'http://localhost:3150/',
+            'https://server-aczd.onrender.com/',
         credentials: 'include',
         prepareHeaders: (headers, { getState }) => {
             const token = getState().auth.token

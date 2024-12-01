@@ -48,9 +48,9 @@ const Favorite = () => {
                             <div className="col-12 md:col-6 xl:col-3 p-3">
                                 <div className="surface-card shadow-2 border-round p-4 ccc">
                                     <div className="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
-                                        <img style={{ height: '50px', marginBottom: '5px', opacity: `${product.quantity == 0 ? '30%' : '100%'}` }} src={"http://localhost:3150/uploads/" + product.company.imageUrl.split("\\")[2]} alt="Image" preview width="250" />
+                                        <img style={{ height: '50px', marginBottom: '5px', opacity: `${product.quantity == 0 ? '30%' : '100%'}` }} src={"https://server-aczd.onrender.com/uploads/" + product.company.imageUrl.split("\\")[2]} alt="Image" preview width="250" />
                                         <div class="container">
-                                            <img className={product.quantity == 0 ? "watchImageOutOfStock " : "watchImage"} src={"http://localhost:3150/uploads/" + product.imageUrl.split("\\")[2]} alt="Image" preview width="250" />
+                                            <img className={product.quantity == 0 ? "watchImageOutOfStock " : "watchImage"} src={"https://server-aczd.onrender.com/uploads/" + product.imageUrl.split("\\")[2]} alt="Image" preview width="250" />
                                             {product.price != product.disPrice ? <span class="onsale sold-out" style={{ opacity: `${product.quantity == 0 ? '30%' : '100%'}` }}>מבצע!</span> : null}
 
                                             {product.quantity == 0 ? <div class="caption" style={{ opacity: '80%', fontSize: '120px', color: 'gray' }}>
@@ -85,7 +85,7 @@ const Favorite = () => {
                                         <Dialog visible={showWatchDetails} style={{ width: '50rem' }} breakpoints={{ '960px': '75vw', '641px': '90vw' }} modal footer={deleteProductDialogFooter} onHide={hideDeleteProductDialog}>
                                             <div className='details' style={{ display: 'flex', justifyContent: 'space-around', direction: 'rtl', textAlign: 'right' }}>
                                                 <div className="flex justify-content-center">
-                                                    <Image src={watchDetails ? "http://localhost:3150/uploads/" + watchDetails[0]?.imageUrl.split("\\")[2] : ""} alt="Image" width="100%" preview />
+                                                    <Image src={watchDetails ? "https://server-aczd.onrender.com/uploads/" + watchDetails[0]?.imageUrl.split("\\")[2] : ""} alt="Image" width="100%" preview />
                                                 </div>
 
                                                 <div style={{ float: 'left', width: '60%' }}>

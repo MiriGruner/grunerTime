@@ -381,7 +381,7 @@ export default function AdminGallery() {
     };
 
     const imageBodyTemplate = (rowData) => {
-        return <img src={"http://localhost:3150/uploads/" + rowData.imageUrl.split("\\")[2]} alt={rowData.imageUrl} className="shadow-2 border-round" style={{ width: '64px' }} />;
+        return <img src={"https://server-aczd.onrender.com/uploads/" + rowData.imageUrl.split("\\")[2]} alt={rowData.imageUrl} className="shadow-2 border-round" style={{ width: '64px' }} />;
     };
 
     const disPriceBodyTemplate = (rowData) => {
@@ -474,7 +474,7 @@ export default function AdminGallery() {
             </div>
 
              <Dialog visible={productDialog} style={{ width: '32rem' }} breakpoints={{ '960px': '75vw', '641px': '90vw' }} header="פרטי שעון" modal className="p-fluid" footer={productDialogFooter} onHide={hideDialog}>
-                {product.imageUrl && <img src={"http://localhost:3150/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" style={{ width: '200px' }} />}
+                {product.imageUrl && <img src={"http://https://server-aczd.onrender.com/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" style={{ width: '200px' }} />}
                 <div className=" flex justify-content-center" style={{ width: '100%' }}>
                     <Dropdown value={selectedBrand || product.company} onChange={(e) => setSelectedBrand(e.value)} options={brands} optionLabel="name"
                         placeholder="בחר חברה" className="w-full md:w-14rem" />
@@ -610,7 +610,7 @@ export default function AdminGallery() {
             </Dialog>
 
             <Dialog visible={purchaseDialog} style={{ width: '32rem' }} breakpoints={{ '960px': '75vw', '641px': '90vw' }} header="פרטי רכישה" modal className="p-fluid" footer={purchaseDialogFooter} onHide={hideDialog}>
-                {product.imageUrl && <img src={"http://localhost:3150/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" style={{ width: '200px' }} />}
+                {product.imageUrl && <img src={"https://server-aczd.onrender.com/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" style={{ width: '200px' }} />}
                 <div className="field">
                     <label htmlFor="name" className="font-bold">
                         שם לקוח

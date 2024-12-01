@@ -240,7 +240,7 @@ export default function Company() {
     };
 
     const imageBodyTemplate = (rowData) => {
-        return <img src={"http://localhost:3150/uploads/" + rowData.imageUrl.split("\\")[2]} alt={rowData.imageUrl} className="shadow-2 border-round" style={{ width: '200px' }} />;
+        return <img src={"https://server-aczd.onrender.com/uploads/" + rowData.imageUrl.split("\\")[2]} alt={rowData.imageUrl} className="shadow-2 border-round" style={{ width: '200px' }} />;
     };
 
     const header = (
@@ -286,7 +286,7 @@ export default function Company() {
             </div>
 
             <Dialog visible={productDialog} style={{ width: '32rem' }} breakpoints={{ '960px': '75vw', '641px': '90vw' }} header="Product Details" modal className="p-fluid" footer={productDialogFooter} onHide={hideDialog}>
-                {product.imageUrl && <img src={"http://localhost:3150/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" />}
+                {product.imageUrl && <img src={"https://server-aczd.onrender.com/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" />}
                 <div className="field">
                     <label htmlFor="name" className="font-bold">
                         שם חברה

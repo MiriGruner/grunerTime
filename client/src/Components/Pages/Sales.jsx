@@ -55,7 +55,7 @@ export default function CustomFilterDemo() {
     const watchBodyTemplate = (rowData) => {
         return (
             <div className="flex align-items-center gap-2">
-                <img alt="flag" src={"http://localhost:3150/uploads/" + rowData.watch.imageUrl.split("\\")[2]} style={{ width: '100px' }} />
+                <img alt="flag" src={"https://server-aczd.onrender.com/uploads/" + rowData.watch.imageUrl.split("\\")[2]} style={{ width: '100px' }} />
                 <span>{rowData.watch.companyBarcode}</span>
             </div>
         );

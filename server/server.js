@@ -31,11 +31,11 @@ app.get("/", (req, res) => {
 })
 
 app.get('/uploads/:filename', (req, res) => {
-    const imagePath = path.join(__dirname, '/public/uploads/', req.params.filename);
+    const imagePath = path.join(__dirname, '', req.params.filename);
     res.sendFile(imagePath, { headers: { 'Content-Type': 'image/jpeg' } });
 });
 
-app.use('/uploads', express.static(__dirname + '/public/uploads'));
+app.use('/uploads', express.static(__dirname + ''));
 
 app.use(ErrorHandler)
 

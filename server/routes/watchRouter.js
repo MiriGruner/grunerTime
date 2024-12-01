@@ -10,7 +10,7 @@ const verifyAdmin = require("../middleware/verifyAdmin")
 const multer = require('multer')
 const storage = multer.diskStorage({
     destination: function (req, res, cb){
-        cb(null, './public/uploads')
+        cb(null, '')
     },
     filename : function(req, res, cb){
         const uniqeSuffix = Date.now()+'-'+Math.round(Math.random()*1E9)

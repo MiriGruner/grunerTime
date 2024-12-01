@@ -474,7 +474,7 @@ export default function AdminGallery() {
             </div>
 
              <Dialog visible={productDialog} style={{ width: '32rem' }} breakpoints={{ '960px': '75vw', '641px': '90vw' }} header="פרטי שעון" modal className="p-fluid" footer={productDialogFooter} onHide={hideDialog}>
-                {product.imageUrl && <img src={"http://https://server-aczd.onrender.com/uploads/" + product.imageUrl.split("\\")[2]} alt={product.imageUrl} className="product-image block m-auto pb-3" style={{ width: '200px' }} />}
+                {product.imageUrl && <img src={"http://https://server-aczd.onrender.com/uploads/" + product.imageUrl} alt={product.imageUrl} className="product-image block m-auto pb-3" style={{ width: '200px' }} />}
                 <div className=" flex justify-content-center" style={{ width: '100%' }}>
                     <Dropdown value={selectedBrand || product.company} onChange={(e) => setSelectedBrand(e.value)} options={brands} optionLabel="name"
                         placeholder="בחר חברה" className="w-full md:w-14rem" />
